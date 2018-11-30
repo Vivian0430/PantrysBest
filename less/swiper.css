@@ -1,0 +1,105 @@
+@media (min-width: 798px) {
+  .swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    padding-top: 51px;
+  }
+  .swiper-container .swiper-wrap {
+    position: relative;
+    width: 400%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+  }
+  .swiper-container .swiper-wrap .swiper-slide {
+    flex-shrink: 0;
+    height: 100%;
+    width: 25%;
+    position: relative;
+  }
+  .swiper-container .swiper-wrap .swiper-slide img {
+    height: auto;
+    line-height: 1;
+    max-width: 100%;
+  }
+  .swiper-container .swiper-pagination {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+  }
+  .swiper-container .swiper-pagination .swiper-pagination-bullet {
+    margin: 0 5px;
+    cursor: pointer;
+    background: #9dc819 none repeat scroll 0 0;
+    opacity: 1;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50%;
+  }
+  .swiper-container .swiper-pagination .swiper-pagination-bullet.active {
+    background: #390b1f none repeat scroll 0 0;
+  }
+}
+@media (max-width: 797px) {
+  .swiper-container {
+    margin: 0 auto;
+    position: relative;
+    padding-top: 51px;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+  }
+  .swiper-container .swiper-wrap {
+    position: relative;
+    width: 400%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+  }
+  .swiper-container .swiper-wrap .swiper-slide {
+    flex-shrink: 0;
+    height: 100%;
+    width: 25%;
+    position: relative;
+    float: left;
+  }
+  .swiper-container .swiper-wrap .swiper-slide img {
+    height: auto;
+    line-height: 1;
+    max-width: 100%;
+  }
+  .swiper-container .swiper-pagination {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+  }
+  .swiper-container .swiper-pagination .swiper-pagination-bullet {
+    margin: 0 5px;
+    cursor: pointer;
+    background: #9dc819 none repeat scroll 0 0;
+    opacity: 1;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50%;
+  }
+}
+.active {
+  background: #390b1f none repeat scroll 0 0 !important;
+}

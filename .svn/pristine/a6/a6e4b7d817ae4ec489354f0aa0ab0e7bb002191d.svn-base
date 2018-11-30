@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Pantry's Best 派悦坊，派送喜悦</title>
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="less/pantry.less">
+    <link rel="stylesheet/less" href="less/detail.less">
+    <script src="lib/jquery/jquery-3.1.1.js"></script>
+    <script src="lib/less/less.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script>less.watch();</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top navbar-static-top pc-header-nav hidden-xs">
+    <div class="container pc-nav-container">
+        <div class="navbar-header">
+            <a class="nav-logo" href="pantry.html">
+                <img src="https://www.pantrysbest.com/assets/white_logo-614e73b36234d0252e4664f3df4466dd.png" alt="white logo">
+            </a>
+        </div>
+        <ul class="nav navbar-nav middle-nav-ul hidden-xs">
+            <li class="v2_locale_icon"><a href="" class="pc-locale-icon" id="change">English</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-map-marker"></i>
+                    天津
+                    <i class="caret"></i>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="">北京</a></li>
+                    <li><a href="">上海</a></li>
+                    <li><a href="">杭州</a></li>
+                    <li><a href="">苏州</a></li>
+                    <li><a href="">无锡/南京/宁波</a></li>
+                    <li><a href="">全国</a></li>
+                </ul>
+            </li>
+            <li class="middle-nav-ul-li">|</li>
+            <li><a href="" class="navbar-font-color">产品分类</a></li>
+            <li class="middle-nav-ul-li">|</li>
+            <li><a href="" class="navbar-font-color">门店</a></li>
+            <li class="middle-nav-ul-li">|</li>
+            <li><a href="" class="navbar-font-color">活动</a></li>
+            <li class="middle-nav-ul-li">|</li>
+            <li><a href="" class="navbar-font-color">派悦商城</a></li>
+            <li class="middle-nav-ul-li">|</li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    关于
+                    <i class="caret"></i>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="">会员</a></li>
+                    <li><a href="">蛋糕卡券</a></li>
+                    <li><a href="">配送须知</a></li>
+                    <li><a href="">关于派悦坊</a></li>
+                    <li><a href="">爱上派悦坊</a></li>
+                    <li><a href="">加入派悦坊</a></li>
+                </ul>
+            </li>
+            <li class="middle-nav-ul-li">|</li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                企业合作
+                <i class="caret"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="">甜品台</a></li>
+                    <li><a href="">企业试吃</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="navbar-header" style="margin-left: 2%">
+             <span class="nav-search-dom">
+                 <input class="form-control search-control-input" placeholder="蛋糕" style="outline: none;">
+                 <i class="fa fa-search search-icon"></i>
+             </span>
+        </div>
+        <ul class="nav navbar-nav navbar-right pc-navbar-right hidden-xs">
+            <li id="sign-in-item"><a href="">登录</a></li>
+            <li id="sign-up-item"><a href="">注册</a></li>
+            <li id="shopping-cart"><a class="navbar-font-color"><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
+    </div>
+</div>
+<div class="navbar navbar-default navbar-fixed-top navbar-static-top mobile-header-nav visible-xs">
+    <div class="container" id="mobile-header-nav">
+        <div class="navbar-header">
+            <span class="fa pnav-icon pnav-left-icon fa-bars" id="toggle-mobile-dropdown-nav"></span>
+            <span class="fa pnav-icon pnav-left-icon fa-angle-down" id="toggle-mobile-dropdown" style="display: none"></span>
+            <a class="nav-logo" href="pantry.html">
+                <img src="https://www.pantrysbest.com/assets/white_logo-614e73b36234d0252e4664f3df4466dd.png" alt="white logo">
+            </a>
+             <span class="nav-search-dom">
+                 <input class="form-control search-control-input" placeholder="蛋糕" style="outline: none;">
+                 <i class="fa fa-search search-icon"></i>
+             </span>
+            <a href="" class="fa fa-phone pnav-icon"></a>
+            <a href="" class="fa fa-map-marker pnav-icon" id="nav-select-city"></a>
+            <a href="" class="pnav-txt">En</a>
+        </div>
+        <div class="container nav navbar-nav navbar-right" id="mobile-navbar-right" style="display: none">
+            <a href="" class="col-xs-12 nav-list-city">当前城市：天津</a>
+            <a href="" class="col-xs-4 nav-list-content">
+                <img src="https://www.pantrysbest.com/assets/nav/user-nav-5f97c653a53d21ff4afa2e0c1ea180ec.png" alt="">
+                <div>个人中心</div>
+            </a>
+            <a href="" class="col-xs-4 nav-list-content">
+                <img src="https://www.pantrysbest.com/assets/nav/cake-nav-9e75ddec38a8e4ae4bb8e8087a86431f.png" alt="">
+                <div>产品分类</div>
+            </a>
+            <a href="" class="col-xs-4 nav-list-content">
+                <img src="https://www.pantrysbest.com/assets/nav/point-nav-e83209c472251bfdfc33ef1f06e55b82.png" alt="">
+                <div>派悦商城</div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container" id="product-container">
+<div class="col-md-12 col-sm-12 col-xs-12 product-container-column">
+    <div class="hidden-xs">
+       <div class="swiper-container gallery-top swiper-container-horizontal swiper-container-fade" style="margin-bottom: 15pt;">
+           <div class="swiper-wrapper">
+               <img src="http://image.pantrysbest.com/product_set_images1531995219740?imageslim" alt="" class="swiper-slide img-responsive">
+               <img src="http://image.pantrysbest.com/product_set_images1531995230616?imageslim" alt="" class="swiper-slide img-responsive">
+               <img src="http://image.pantrysbest.com/product_set_images1532431830966?imageslim" alt="" class="swiper-slide img-responsive">
+               <img src="http://image.pantrysbest.com/product_set_images1531995255056?imageslim" alt="" class="swiper-slide img-responsive">
+           </div>
+       </div>
+       <div class="swiper-container gallery-thumbs swiper-container-horizontal" style="cursor: -webkit-grab;">
+           <div class="swiper-wrap">
+               <img src="http://image.pantrysbest.com/product_set_images1531995219740?imageslim" alt="" class="swiper-slide img-responsive" style="margin-right: 15px;width: 216px;">
+               <img src="http://image.pantrysbest.com/product_set_images1531995230616?imageslim" alt="" class="swiper-slide img-responsive" style="margin-right: 15px;width: 216px;">
+               <img src="http://image.pantrysbest.com/product_set_images1532431830966?imageslim" alt="" class="swiper-slide img-responsive" style="margin-right: 15px;width: 216px;">
+               <img src="http://image.pantrysbest.com/product_set_images1531995255056?imageslim" alt="" class="swiper-slide img-responsive" style="margin-right: 15px;width: 216px;">
+           </div>
+       </div>
+    </div>
+    <div class="visible-xs">
+     <div class="swiper-container mobile-slideshows-swiper swiper-container-horizontal">
+         <div class="swiper-wrapper">
+             <div class="swiper-slide"><img src="http://image.pantrysbest.com/product_set_images1531995219740?imageslim" alt="" class="img-responsive"></div>
+             <div class="swiper-slide"><img src="http://image.pantrysbest.com/product_set_images1531995230616?imageslim" alt="" class="img-responsive"></div>
+             <div class="swiper-slide"><img src="http://image.pantrysbest.com/product_set_images1532431830966?imageslim" alt="" class="img-responsive"></div>
+             <div class="swiper-slide"><img src="http://image.pantrysbest.com/product_set_images1531995255056?imageslim" alt="" class="img-responsive"></div>
+         </div>
+         <div class="swiper-pagination mb-swiper-pagination swiper-pagination-clickable">
+             <span class="swiper-pagination-bullet active"></span>
+             <span class="swiper-pagination-bullet"></span>
+             <span class="swiper-pagination-bullet"></span>
+             <span class="swiper-pagination-bullet"></span>
+         </div>
+     </div>
+    </div>
+    <div class="product-info-container">
+     <div class="row">
+         <div class="col-md-7">
+             <h2 style="color: #390c20;">爱的加冕蛋糕冰淇淋</h2>
+             <h3 style="color: #390c20;">￥319</h3>
+             <div class="description">
+                  <div>
+                      <span style="font-size: 14px">爱是公主变女王的加冕礼，在甜蜜粉与梦幻蓝渐变的小世界里，珍藏恰逢其时的爱情。翻糖小雏菊点缀下，7种口味冰淇淋球参差相依，犹如一顶爱情的皇冠，甜蜜丰富。黑莓、树莓、青苹果、桃子、草莓、芒果和香草味，入口的每一勺冰淇淋，都仿佛在探索爱情的滋味。蛋糕主体香草冰淇淋中嵌落着的草莓脆香米，带来味觉与口感上的双重惊喜，正如突如其来的满分告白，让人瞬间被俘。蛋糕胚上缀满樱桃果茸的清新酸甜，触动纯澈的柔软爱意。 派悦坊七夕献礼之爱的加冕蛋糕冰淇淋，赠予真爱之人，正式宣布爱情魔法即刻生效。</span>
+                  </div>
+                  <div>
+                      <span style="font-size: 14px;color: rgb(255, 140, 0);">温馨提示：蛋糕冰淇淋可以在全国部分地区顺丰宅配上门，</span>
+                      <a href="" style="font-size: 14px;color:rgb(51, 122, 183);">点击查看配送区域。</a>
+                  </div>
+              </div>
+             <div class="tag">
+                 <a href=""><span class="tag-goods">蛋糕冰淇淋</span></a>
+                 <a href=""><span class="tag-goods">生日蛋糕</span></a>
+                 <a href=""><span class="tag-goods">热门</span></a>
+                 <a href=""><span class="tag-goods">全国送</span></a>
+             </div>
+             <div class="grayborder"></div>
+             <div>
+                 <span>您当前所选产品支持配送至 </span>
+                 <span style="color: red;">天津</span>
+             </div>
+             <div class="grayborder"></div>
+             <div class="ingredients" style="font-size: 11px;font-color:#888;">
+                 <div>口味亮点</div>
+                 <div>黑莓果茸、树莓果茸、青苹果果茸、桃果茸、草莓果茸、芒果果茸、樱桃果茸、草莓脆香米、进口牛奶、香草籽、乳脂奶油</div>
+             </div>
+
+         </div>
+         <div class="col-md-5 product-offerings">
+          <div><span class="selected size-selection">5吋</span></div>
+          <div>
+              <div class="product-count-container" style="margin-top: 10px">
+               <span id="product-price">￥319</span>
+               <i class="fa fa-minus" aria-hidden="true"></i>
+                <input type="number" id="product-count" value="1">
+               <i class="fa fa-plus" aria-hidden="true"></i>
+              </div>
+          </div>
+          <div class="hidden-xs" id="action-button">
+              <div class="buynow-button">立即购买</div>
+              <div class="addcart-button">
+               <span class="fa fa-shopping-cart"></span>
+                  <span>加入购物车</span>
+              </div>
+          </div>
+         </div>
+     </div>
+        <div class="divider" style="height: 1px;width: 100%;background: #390C20"></div>
+        <div class="more">
+            <div class="bold-head">温馨提示</div>
+            <div class="tip">
+                1、蛋糕收到后在2-3小时食用最佳, 纸杯蛋糕收到后在1小时食用最佳，如果食用不完请冷藏保存（冰淇淋蛋糕请冷冻保存），在24小时内食用完毕<br>
+                2、如对乳制品、麦麸、可可、鸡蛋有过敏经历者请选择其它款蛋糕
+            </div>
+        </div><br>
+        <img src="https://www.pantrysbest.com/assets/size_icon/cake-1b307c5f1d033a857ab1832b2d7151a1.png" alt="" class="hidden-xs" style="max-width: 100%;">
+        <img src="https://www.pantrysbest.com/assets/size_icon/mcake-3a1bafbe4ff9aa9f244d37456ee67ee0.png" alt="" class="visible-xs" style="width: 100%;">
+    </div>
+</div>
+</div>
+ <div class="footer text-muted visible-xs">
+    <div class="container footer-container">
+        <div class="visible-xs">
+            <a href="" style="color: #4a8937">
+                <i class="fa fa-phone" style="color: #4a8937" aria-hidden="true"></i>
+                4008-3-14159</a>
+        </div>
+        <div class="visible-xs" id="icp">
+            Copyright 2010-2018 派悦坊，Ltd 京ICP备12046340
+        </div>
+    </div>
+</div>
+ <div class="footer text-muted" style="margin-top: 55px;">
+    <div class="container foot-container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 hidden-xs">
+                <div class="col-md-5 col-sm-5">
+                    <div class="col-md-5 col-sm-5 pc-left">
+                        <div class="info">
+                            <span class="fa fa-phone fa_icon"></span>
+                            <span>4008-3-14159</span>
+                        </div>
+                        <div class="info">
+                            <span class="fa fa-envelope fa_icon"></span>
+                            <span>order@pantrysbest.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 pc-center">
+                    <a href="" class="col-md-6 col-sm-6">
+                        <i class="fa fa-weibo fa-2x fa_icon"></i>
+                    </a>
+                    <a href="" class="col-md-6 col-sm-6 wx" style="position: relative;">
+                        <i class="fa fa-weixin fa-2x fa_icon"></i>
+                        <img src="https://www.pantrysbest.com/assets/wx_code-91f71945c25d7dfe496f931bcff976bf.png" style="display: none" class="img-responsive wx-code" id="footer_wx_code" alt="">
+                    </a>
+                </div>
+                <div class="col-md-5 col-sm-5" style="text-align: left;">
+                    <img src="https://www.pantrysbest.com/assets/brand-icons-b7a42d80596318922d6f6fb848166249.png" class="right-img" alt="">
+                </div>
+                <div class="col-md-12 col-sm-12 pc-addr">
+                    <div class="info">北京市朝阳区神路街39号10幢3层4段92-93</div>
+                    <div class="info">Copyright 2010-2018 派悦坊，Ltd 京ICP备12046340</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <div class="navbar navbar-fixed-bottom visible-xs goods-fixed-bottom">
+    <div class="col-xs-4 cart-icon-dom">
+        <span class="fa fa-shopping-cart cart-icon"></span>
+    </div>
+    <div class="col-xs-4 padding-0px">
+        <div class="btn pantry-button" style="background-color: #390c20;">加入购物车</div>
+    </div>
+    <div class="col-xs-4 padding-0px">
+        <div class="btn pantry-button" style="background-color: #9DC816;">加入购物车</div>
+    </div>
+</div>
+</body>
+</html>
+<script src="js/toggle.js"></script>
+<script src="js/detail-wrap.js"></script>

@@ -1,0 +1,59 @@
+/**
+ * Created by student on 2018/11/24.
+ */
+function touch() {
+    var ul=document.querySelector(".swiper-wrap");
+    var li=document.querySelectorAll(".mobile-slideshows-swiper .swiper-wrap .swiper-slide");
+    var wrap=document.querySelector(".swiper-container");
+    console.log(li);
+    console.log(li.length);
+    wrap.style.height=li[0].offsetHeight+"px";
+    ul.style.width=li.length*100+"%";
+    console.log(ul.style.width);
+    /*for(var i=0;i<li.length;i++){
+        li[i].style.width=1/li.length*100+"%";
+    }*/
+    var startX = 0;
+    var moveX = 0;
+    var distanceX = 0;
+    var isEnd = true;
+    addEventListener(ul,"touchstart",function(e){
+        console.log("xxx");
+        var touch = e.targetTouches[0];
+        startX = touch.clientX;
+    })
+    addEventListener(ul,"touchmove",function(e){
+        if(isEnd == true){
+            var touch = e.targetTouches[0];
+            moveX = touch.clientX;
+            distanceX = moveX - startX;
+            ul.style.left=ul.offsetLeft+distanceX+"px";
+        }
+    })
+    addEventListener(ul,"touchend",function(e){
+        isEnd = false;
+        if(Math.abs(distanceX) > 80){
+           /* if(distanceX > 0){
+                index=0;
+                ul.style.left = -index*wrap.offsetWidth+ "px";
+            }
+            else{
+                index=0.7;
+                ul.style.left = -index*wrap.offsetWidth + "px";
+            }*/
+            var currNum = Math.round(-ul.offsetLeft/ul.offsetWidth);
+            currNum = currNum>=(li.length-1) ? li.length-1 : currNum;
+            currNum = currNum<=0 ? 0 : currNum;
+            ul.style.left = -currNum*wrap.offsetWidth + 'px';
+        }
+        else{
+            ul.style.left=ul.offsetLeft+"px";
+        }
+        startX = 0;
+        moveX = 0;
+        distanceX = 0;
+    })
+}
+window.onload=function(){
+    touch();
+}

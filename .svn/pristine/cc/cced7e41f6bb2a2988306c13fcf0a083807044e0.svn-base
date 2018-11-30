@@ -1,0 +1,131 @@
+.gift-list{
+  text-align: right;
+  margin-top: 55px;
+  .gift-title{
+    box-sizing: border-box;
+
+    padding-top: 50px;
+    li{
+      height: 50px;
+
+      a{
+        padding-right: 20px;
+        color: #390C20;
+        border: none;
+        font:700 14px solid 微软雅黑;
+      }
+      &.active{
+        a{
+          background-color: #390C20;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .gift-content{
+    border-left: 2px solid #390C20;
+    .tab-pane{
+      padding-top: 40px;
+
+      .content-title-img{
+        position: relative;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+        height: 180px;
+        a{
+          text-align: left;
+          position: absolute;
+          top: 15px;
+          left: 50%;
+          transform: translate(-50%,0);
+          display: block;
+          width: 300px;
+          height: 132px;
+          background-image: url(https://www.pantrysbest.com/assets/normal-coupon-495a24636517c5510df46cd94be03d16.jpg);
+          background-repeat: no-repeat;
+          line-height: 132px;
+          font-size:18px;
+          padding-left:10px;
+          color: #390C20;
+          span{
+            float: left;
+            i{
+              color: #390C20;
+              font-size: 40px;
+            }
+          }
+          .shichi{
+            margin-left: 20px;
+            margin-top: 18px;
+            font-size:12px;
+            line-height: 20px;
+          }
+        }
+      }
+      .des{
+        padding-top: 20px;
+        text-align: left;
+        color: #85b01d;
+        font-size:18px;
+      }
+      .caption{
+        p{
+          color: #390C20;
+          text-align: left;
+          a{
+            background-color:#85b01d ;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.xs-header-nav{
+  margin-top: 50px;
+  background-color: #fff;
+  a {
+    line-height: 50px;
+    text-align: center;
+    color: #390c20;
+    i{
+      color: #390c20;
+    }
+  }
+
+  .more{
+    text-align: center;
+    a{
+      text-decoration: none;
+      cursor: pointer;
+    }
+    ul{
+      position: fixed;
+      top:98px;
+      width: 101%;
+      background-color: #fff;
+      li{
+        a{
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .des{
+    text-align: center !important;
+  }
+  .caption{
+    p{
+      color: #390C20;
+      text-align: center !important;
+      a{
+        background-color:#85b01d ;
+        border: none;
+      }
+    }
+  }
+}

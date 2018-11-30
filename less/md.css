@@ -1,0 +1,51 @@
+.pyf-container {
+  padding-bottom: 200px;
+  margin: 0px auto;
+}
+@media (min-width: 798px) {
+  .pyf-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .pyf-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .pyf-container {
+    width: 1170px;
+  }
+}
+.pyf-container .search-info {
+  margin: 70px 0px 10px 0px;
+  padding-left: 0px;
+}
+.pyf-container .search-info .search {
+  padding-left: 0px ;
+}
+.pyf-container .map {
+  padding-left: 0px ;
+  padding-right: 0px;
+}
+.pyf-container .map .gaode-map {
+  height: 500px;
+}
+.pyf-container .map .adreess {
+  padding-left: 0px ;
+  padding-right: 0px;
+}
+.pyf-container .map .adreess .adreesscontainer {
+  margin-bottom: 40px;
+  color: #390C20;
+}
+.pyf-container .map .adreess .adreesscontainer .text .adreessname {
+  font-weight: 800;
+}
+.pyf-container .map .adreess .adreesscontainer .text .adreessname .adreessa {
+  color: red;
+}
+.pyf-container .map .adreess .adreesscontainer .btn {
+  background-color: #390C20;
+  color: white;
+}

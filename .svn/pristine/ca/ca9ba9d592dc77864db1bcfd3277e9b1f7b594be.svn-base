@@ -1,0 +1,223 @@
+@media (min-width: 798px) {
+  #product-container {
+    margin-top: 71px;
+  }
+  #product-container .swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding-top: 0;
+  }
+  #product-container .swiper-container .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    box-sizing: content-box;
+  }
+  #product-container .swiper-container .swiper-wrapper .swiper-slide {
+    width: 101%;
+    height: 100%;
+  }
+  #product-container .product-info-container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  #product-container .product-info-container .row {
+    padding-right: -15px;
+    padding-left: -15px;
+  }
+  #product-container .product-info-container .row .description {
+    color: #390C20;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  #product-container .product-info-container .row .tag-goods {
+    padding: 3px;
+    border: 1px solid #390c20;
+    border-radius: 4px;
+    margin: 3px;
+    cursor: pointer;
+    color: #390c20;
+    display: inline-block;
+    font-size: 12px;
+  }
+  #product-container .product-info-container .row .grayborder {
+    background-color: #cccccc;
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #product-container .product-info-container .row .product-offerings {
+    text-align: right;
+  }
+  #product-container .product-info-container .row .product-offerings .size-selection {
+    width: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 1px;
+    font-size: 80%;
+  }
+  #product-container .product-info-container .row .product-offerings .size-selection.selected {
+    background-color: #9dc819 !important;
+    border: 1px solid #9dc819;
+    color: white;
+    font-weight: bolder;
+  }
+  #product-container .product-info-container .row .product-offerings #product-price {
+    margin-right: 5px;
+  }
+  #product-container .product-info-container .row .product-offerings #product-count {
+    margin: 0 5px;
+    text-align: center;
+  }
+  #product-container .product-info-container .row .product-offerings input {
+    width: 50px;
+  }
+  #product-container .product-info-container .row .product-offerings i {
+    color: #333 !important;
+  }
+  #product-container .product-info-container .row .product-offerings #action-button {
+    margin-top: 10px;
+  }
+  #product-container .product-info-container .row .product-offerings #action-button .buynow-button {
+    margin-right: 5px;
+    color: white;
+    font-weight: bolder;
+    border: 0;
+    background: #9dc819;
+    display: inline-block;
+    width: 120px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  #product-container .product-info-container .row .product-offerings #action-button .addcart-button {
+    background-color: #390C20;
+    color: white;
+    display: inline-block;
+    width: 120px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    /*span{&:before{
+                content: "\f07a";
+              }}*/
+  }
+}
+@media (min-width: 320px) {
+  .product-offerings {
+    text-align: center;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 797px) {
+  #product-container {
+    margin-top: 71px;
+  }
+  #product-container .swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    padding-top: 0;
+  }
+  #product-container .swiper-container .swiper-wrapper {
+    position: relative;
+    width: 400%;
+    z-index: 1;
+    display: flex;
+    height: 100%;
+    box-sizing: content-box;
+  }
+  #product-container .swiper-container .swiper-wrapper .swiper-slide {
+    width: 101%;
+    height: 100%;
+  }
+  #product-container .swiper-container .swiper-wrapper .swiper-slide img {
+    height: auto;
+    line-height: 1;
+    width: 100%;
+  }
+  #product-container .product-info-container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  #product-container .product-info-container .row {
+    padding-right: -15px;
+    padding-left: -15px;
+  }
+  #product-container .product-info-container .row .description {
+    color: #390C20;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  #product-container .product-info-container .row .tag-goods {
+    padding: 3px;
+    border: 1px solid #390c20;
+    border-radius: 4px;
+    margin: 3px;
+    cursor: pointer;
+    color: #390c20;
+    display: inline-block;
+    font-size: 12px;
+  }
+  #product-container .product-info-container .row .grayborder {
+    background-color: #cccccc;
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #product-container .product-info-container .row .product-offerings {
+    text-align: center;
+    padding-top: 20px;
+  }
+  #product-container .product-info-container .row .product-offerings .size-selection {
+    width: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 1px;
+    font-size: 80%;
+  }
+  #product-container .product-info-container .row .product-offerings .size-selection.selected {
+    background-color: #9dc819 !important;
+    border: 1px solid #9dc819;
+    color: white;
+    font-weight: bolder;
+  }
+  #product-container .product-info-container .row .product-offerings #product-price {
+    margin-right: 5px;
+  }
+  #product-container .product-info-container .row .product-offerings #product-count {
+    margin: 0 5px;
+    text-align: center;
+  }
+  #product-container .product-info-container .row .product-offerings input {
+    width: 50px;
+  }
+  #product-container .product-info-container .row .product-offerings i {
+    color: #333 !important;
+  }
+  #product-container .product-info-container .row .product-offerings .product-count-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 23px;
+  }
+}

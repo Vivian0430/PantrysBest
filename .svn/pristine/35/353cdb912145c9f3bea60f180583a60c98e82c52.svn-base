@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+.icecream{
+  margin-top: 50px;
+  width: 100%;
+  min-width: 450px;
+  padding: 0 5%;
+  .tip{
+    margin-left: 15px;
+    margin-bottom: 20px;
+    span{
+      font-size: 25px;
+      font-weight: bold;
+      color: #390c20;
+    }
+    a{
+      padding-right: 20px;
+      color: #85b01d;
+      padding-left: 10px;
+    }
+  }
+  ul{
+    list-style: none;
+    li{
+      padding: 0;
+      position: relative;
+      width: 170px;
+      height: 240px;
+      margin-right: 3%;
+      &:hover{
+        transition: all 0.2s linear;
+        transform: translateY(-1px);
+        box-shadow: 1px 1px 5px black;
+      }
+      img{
+        position: absolute;
+        width: 170px;
+        height: 170px;
+      }
+      .lefttop{
+        img{
+          position: absolute;
+          top: 0px;
+          width: 42.5px;
+          height: 42.5px;
+        }
+      }
+      a{
+        color: #390c20;
+        position: absolute;
+        top:175px;
+      }
+      .card{
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        background-image: url("../img/shopcrd.png");
+        background-size: 35px 35px;
+        &:hover{
+          background-image: url("../img/card.png");
+          background-size: 35px 35px;
+        }
+      }
+      P{
+        font-size: 12px;
+        color: #cccccc;
+        position: absolute;
+        bottom: -10px;
+        left:0px;
+      }
+    }
+  }
+}
+
+.navbar-default{
+  background-color: #390C20;
+  border-color: #390C20;
+}
+.footer{
+margin-top: 400px;
+}

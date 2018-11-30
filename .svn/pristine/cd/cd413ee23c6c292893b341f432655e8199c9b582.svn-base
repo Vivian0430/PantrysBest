@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Pantry's Best 派送喜悦</title>
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="less/party.less">
+    <link rel="stylesheet/less" href="less/head.less">
+    <script src="lib/jquery/jquery-3.1.1.js"></script>
+    <script src="lib/less/less.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script>less.watch();</script>
+</head>
+<body>
+    <div class="navbar navbar-default hidden-xs navbar-fixed-top navbar-static-top pc-header-nav">
+        <div >
+
+        </div>
+    </div>
+</body>
+</html>

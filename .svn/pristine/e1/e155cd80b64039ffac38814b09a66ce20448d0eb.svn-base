@@ -1,0 +1,115 @@
+@media (min-width: 798px) {
+  #product-container{
+    margin-top: 71px;
+    .swiper-container {
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      padding-top: 0;
+      .swiper-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        box-sizing: content-box;
+        .swiper-slide{
+          width: 101%;
+          height: 100%;
+        }
+      }
+    }
+    .product-info-container{
+      padding-right: 15px;
+      padding-left: 15px;
+      .row{
+        padding-right: -15px;
+        padding-left: -15px;
+        .description{
+          color: #390C20;
+          padding-top: 10px;
+          padding-bottom: 20px;
+        }
+        .tag-goods{
+          padding: 3px;
+          border: 1px solid #390c20;
+          border-radius: 4px;
+          margin: 3px;
+          cursor: pointer;
+          color: #390c20;
+          display: inline-block;
+          font-size: 12px;
+        }
+        .grayborder{
+          background-color: #cccccc;
+          height: 1px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 797px) {
+  #product-container{
+    margin-top: 71px;
+    .swiper-container {
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      width: 100%;
+      padding-top: 0;
+      .swiper-wrapper {
+        position: relative;
+        width: 400%;
+        z-index: 1;
+        display: flex;
+        height: 100%;
+        box-sizing: content-box;
+        .swiper-slide{
+          width: 101%;
+          height: 100%;
+          img{
+            height: auto;
+            line-height: 1;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .product-info-container{
+      padding-right: 15px;
+      padding-left: 15px;
+      .row{
+        padding-right: -15px;
+        padding-left: -15px;
+        .description{
+          color: #390C20;
+          padding-top: 10px;
+          padding-bottom: 20px;
+        }
+        .tag-goods{
+          padding: 3px;
+          border: 1px solid #390c20;
+          border-radius: 4px;
+          margin: 3px;
+          cursor: pointer;
+          color: #390c20;
+          display: inline-block;
+          font-size: 12px;
+        }
+        .grayborder{
+          background-color: #cccccc;
+          height: 1px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+
+    }
+  }
+}

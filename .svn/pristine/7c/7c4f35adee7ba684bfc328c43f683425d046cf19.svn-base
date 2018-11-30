@@ -1,0 +1,32 @@
+@import "variables";
+@media (max-width: 797px) {
+  .goods-fixed-bottom {
+    z-index: 1050;
+    .cart-icon-dom {
+      padding: 0px;
+      padding-top: 10px;
+      text-align: center;
+      background: @body-bg;
+      height: 50px;
+      .cart-icon {
+        font-size: 16pt;
+        color: #390c20;
+        float: left;
+        margin-left: 15px;
+        cursor: pointer;
+        padding: 5px;
+      }
+    }
+    .btn {
+      border-radius: 0px;
+      font-size: 16px;
+    }
+    .pantry-button {
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      width: 100%;
+      color: white;
+    }
+  }
+}

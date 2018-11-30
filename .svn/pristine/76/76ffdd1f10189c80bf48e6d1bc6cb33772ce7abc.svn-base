@@ -1,0 +1,31 @@
+@media (max-width: 797px) {
+  .goods-fixed-bottom {
+    z-index: 1050;
+  }
+  .goods-fixed-bottom .cart-icon-dom {
+    padding: 0px;
+    padding-top: 10px;
+    text-align: center;
+    background: #fff;
+    height: 50px;
+  }
+  .goods-fixed-bottom .cart-icon-dom .cart-icon {
+    font-size: 16pt;
+    color: #390c20;
+    float: left;
+    margin-left: 15px;
+    cursor: pointer;
+    padding: 5px;
+  }
+  .goods-fixed-bottom .btn {
+    border-radius: 0px;
+    font-size: 16px;
+  }
+  .goods-fixed-bottom .pantry-button {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+    color: white;
+  }
+}

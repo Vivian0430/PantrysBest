@@ -1,0 +1,5 @@
+@mainColor:#390C20;
+@media (min-width:805px)
+.pc-header-nav{
+
+}

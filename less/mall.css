@@ -1,0 +1,124 @@
+@media screen and (min-width: 798px) {
+  .shop-content {
+    height: 500px;
+    margin-top: 50px ;
+  }
+  .shop-content .row .jifen {
+    height: 80px;
+    padding-top: 30px ;
+    text-align: right;
+    color: #390c20;
+    font-size: 18px;
+    border-right: 2px solid #390c20;
+    background-color: #e9eace;
+  }
+  .shop-content .row .thanks {
+    height: 80px;
+    padding: 10px;
+    color: #390c20;
+    font-size: 18px;
+    background-color: #e9eace;
+  }
+}
+@media screen and (max-width: 798px) {
+  .shop-content {
+    height: 500px;
+    margin-top: 50px ;
+  }
+  .shop-content .row .jifen {
+    box-sizing: border-box;
+    line-height: 40px;
+    text-align: center;
+    color: #390c20;
+    font-size: 14px;
+    background-color: #fff;
+  }
+  .shop-content .row .thanks {
+    box-sizing: border-box;
+    height: 80px;
+    padding: 10px;
+    color: #390c20;
+    font-size: 18px;
+    background-color: #eeeeee;
+  }
+}
+.class {
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.class .nav-tabs li a {
+  text-align: left;
+  color: #390c20;
+  font-size: 18px;
+  background-color: #f2df91;
+  border-bottom-color: #e9eace;
+}
+.class .nav-tabs li.active a {
+  text-align: left;
+  color: #390c20;
+  font-size: 18px;
+  background-color: #e9eace;
+  border-bottom-color: #e9eace !important;
+}
+.class .tab-content {
+  padding-top: 10px;
+  height: 500px;
+  background-color: #e9eace;
+}
+.class .tab-content #home {
+  padding: 0px;
+}
+.class .tab-content #home div {
+  padding: 0px;
+}
+.class .tab-content #home div img {
+  width: 100%;
+}
+.class .tab-content #home div p {
+  font-size: 15px;
+}
+.class .tab-content #home div p:nth-of-type(2) {
+  font-size: 18px;
+}
+.class .tab-content #home div .wangguan {
+  width: 50%;
+}
+.class .tab-content #profile {
+  height: 40px;
+  width: 100%;
+  background-color: #e9eace;
+}
+.class .tab-content #profile .media {
+  margin-bottom: 10px;
+}
+.class .tab-content #profile .media .media-left a img {
+  width: 80px;
+}
+.xs-header-nav {
+  margin-top: 50px;
+  background-color: #fff;
+}
+.xs-header-nav a {
+  line-height: 50px;
+  text-align: center;
+  color: #390c20;
+}
+.xs-header-nav a i {
+  color: #390c20;
+}
+.xs-header-nav .more {
+  text-align: center;
+}
+.xs-header-nav .more a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.xs-header-nav .more ul {
+  position: fixed;
+  top: 98px;
+  left: 0px;
+  width: 101%;
+}
+.xs-header-nav .more ul li a {
+  text-align: left;
+}
